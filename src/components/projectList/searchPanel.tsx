@@ -1,7 +1,19 @@
 import React from "react";
 import { useEffect, useState } from "react";
 
-const SearchPanel = ({ users, param, setParam }) => {
+export interface User {
+  id: string;
+  name: string; 
+}
+interface SearchPanelProps {
+  users: User[];
+  param: {
+    name: string;
+    userId: string;
+  };
+  setParam: (param: SearchPanelProps["param"]) => void;
+}
+const SearchPanel = ({ users, param, setParam }: SearchPanelProps) => {
   return (
     <form>
       <input

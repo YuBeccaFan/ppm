@@ -2,7 +2,7 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import List from "./list";
 import SearchPanel from "./searchPanel";
-import qs from 'qs';
+import * as qs from 'qs';
 import cleanObject from '../../utils/cleanObject';
 import useDebounce from '../../utils/useDounce';
 import useMount from '../../utils/useMount';

@@ -1,6 +1,6 @@
 const { useEffect } = require("react");
 
-const useMount = (callback) => {
+const useMount = (callback: ()=> void) => {
   useEffect(() => {
     callback();
   }, []);
