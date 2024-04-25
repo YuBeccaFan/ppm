@@ -3,7 +3,7 @@ const cleanObject = (object: object) => {
   Object.keys(result).forEach((key) => {
     // @ts-ignore
     const value = result[key];
-    if (value == undefined || value === "") {
+    if (value === undefined || value === "") {
       // @ts-ignore
       delete result[key];
     }
