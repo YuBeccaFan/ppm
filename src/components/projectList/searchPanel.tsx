@@ -4,6 +4,10 @@ import { useEffect, useState } from "react";
 export interface User {
   id: string;
   name: string; 
+  email: string;
+  title: string;
+  organization: string;
+  token: string;
 }
 interface SearchPanelProps {
   users: User[];
